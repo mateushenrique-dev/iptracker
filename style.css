@@ -37,8 +37,8 @@
 }
 
 .ip-field input {
-  width: 35%;
-  height: 50px;
+  width: 32%;
+  height: 55px;
   border-radius: 15px 0 0 15px;
   border: none;
   font-size: 18px;
@@ -50,7 +50,7 @@
   width: 50px;
   font-size: 21px;
   font-weight: 700;
-  height: 50px;
+  height: 55px;
   color: #fff;
   border: none;
   border-radius: 0 15px 15px 0;
