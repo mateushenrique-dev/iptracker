@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | IP Address Tracker</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="ip-field">
+        <h1>IP Address Tracker</h1>
+        <div class="ip-field-inputs">
+          <input
+            data-ip-field=""
+            type="text"
+            placeholder="Search for any IP address or domain"
+          /><button data-ip-submit="">
+            <img src="images/icon-arrow.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="infos">
+        <div class="ip-infos">
+          <ul>
+            <li>
+              <h3>Ip Address</h3>
+              <span data-ip-address="">000.000.000</span>
+            </li>
+            <div class="divisoria"></div>
+            <li>
+              <h3>Location</h3>
+              <span data-location="">Location</span>
+            </li>
+            <div class="divisoria"></div>
+            <li>
+              <h3>Timezone</h3>
+              <span>UTC<span data-timezone=""></span></span>
+            </li>
+            <div class="divisoria"></div>
+            <li>
+              <h3>Isp</h3>
+              <span data-isp="">Isp</span>
+            </li>
+          </ul>
+        </div>
+        <div data-map="" class="map"></div>
+      </div>
+    </main>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="iptracker.js"></script>
+  </body>
+</html>

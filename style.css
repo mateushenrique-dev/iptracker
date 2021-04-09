@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Rubik";
+  outline: none;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+}
+
+.ip-field {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 50px 50px;
+  gap: 20px;
+  align-items: center;
+  background: url("images/pattern-bg.png") no-repeat center;
+  background-size: cover;
+  width: 100vw;
+  height: 37vh;
+  padding-top: 20px;
+}
+
+.ip-field h1 {
+  color: #fff;
+  font-weight: 500;
+}
+
+.ip-field-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ip-field input {
+  width: 35%;
+  height: 50px;
+  border-radius: 15px 0 0 15px;
+  border: none;
+  font-size: 18px;
+  padding: 0 20px;
+}
+
+.ip-field button {
+  cursor: pointer;
+  width: 50px;
+  font-size: 21px;
+  font-weight: 700;
+  height: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 0 15px 15px 0;
+  background: #000;
+}
+
+.infos {
+  display: grid;
+  justify-content: center;
+}
+
+.ip-infos {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  z-index: 2;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%);
+  -webkit-box-shadow: 1px 6px 43px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 6px 43px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 6px 43px -21px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
+}
+
+.ip-infos ul {
+  display: flex;
+}
+
+.ip-infos li {
+  padding: 0 50px 0 30px;
+  max-width: 200px;
+}
+
+.ip-infos h3 {
+  color: hsl(0, 0%, 59%);
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.ip-infos span {
+  font-size: 24px;
+  color: hsl(0, 0%, 17%);
+  font-weight: 500;
+}
+
+.ip-infos .divisoria {
+  width: 0.5px;
+  height: 70px;
+  margin: 0 0 0 20px;
+  background: hsl(0, 0%, 80%);
+}
+
+.map {
+  z-index: 1;
+  width: 100vw;
+  height: 60vh;
+}
+
+/* Responsive */
+
+@media (max-width: 500px) {
+  .ip-infos {
+    height: 60vh;
+    justify-items: center;
+  }
+  .ip-infos ul {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    width: 80%;
+  }
+  .divisoria {
+    display: none;
+  }
+  .ip-infos li {
+    margin-bottom: 20px;
+  }
+  .ip-infos li:last-child {
+    margin-bottom: 0;
+  }
+  .ip-infos span {
+    font-size: 18px;
+  }
+  .ip-field h1 {
+    font-size: 24px;
+  }
+  .ip-field input {
+    width: 55vw;
+  }
+  .map {
+    height: 120vh;
+  }
+}
