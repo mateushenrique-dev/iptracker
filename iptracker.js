@@ -9,6 +9,8 @@ let mymap = undefined
 
 ipSubmit.addEventListener('click', apiCatch)
 
+
+
 async function apiCatch() {
     try {
       if (validURL(ipField.value)) {
@@ -17,6 +19,7 @@ async function apiCatch() {
         var response = await fetch(`https://geo.ipify.org/api/v1?apiKey=at_T5EcEOnig7oNVrqjuCgBuk2qQagCl&ipAddres=${ipField.value}`)
       }
       let data = await response.json()
+      console.log(data)
       ipAddress.innerText = data.ip
       locationField.innerText = `${data.location.city}, ${data.location.region}, ${data.location.country}`
       timezoneField.innerText = data.location.timezone

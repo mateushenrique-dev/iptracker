@@ -71,7 +71,7 @@
   height: 150px;
   background: #fff;
   position: absolute;
-  top: 180px;
+  top: 28%;
   left: 50%;
   transform: translate(-50%);
   -webkit-box-shadow: 1px 6px 43px -21px rgba(0, 0, 0, 0.75);
@@ -114,6 +114,7 @@
   z-index: 1;
   width: 100vw;
   height: 60vh;
+  background: url("images/map.png");
 }
 
 /* Responsive */

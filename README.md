@@ -42,8 +42,8 @@ How to use this script on my website :
 
 ### Links
 
-- Solution URL: (https://www.frontendmentor.io/solutions/url-shortening-api-landing-page-LwZT2eGYb)
-- Live Site URL: (https://encurtador-de-link.netlify.app/#)
+- Solution URL: (https://www.frontendmentor.io/solutions/ip-address-tracker-solution-0SfIoO634)
+- Live Site URL: (ip-tracker-mateushenrique-dev.netlify.app)
 
 ### Built with
 
